@@ -9,8 +9,6 @@ import TestimonialsSection from '@components/sections/testimonials/TestimonialsS
 import PricingSection from '@components/sections/pricing/PricingSection.astro';
 import FAQ from '@components/sections/misc/FAQ.astro';
 import AnnouncementBanner from '@components/ui/banners/AnnouncementBanner.astro';
-import ClientsSection from '@components/sections/landing/ClientsSection.astro';
-import { partnersData } from '@data/constants';
 import heroImage from '@images/hero-image.avif';
 import faqs from '@data/faqs.json';
 import features from '@data/features.json';
@@ -48,12 +46,7 @@ const avatarSrcs: Array<string> = [
     starCount={5}
     reviews=`Clientes satisfechos en <span class="font-bold">Quitumbe</span>`
     src={heroImage}
-  />
-
-  <ClientsSection
-    title="Líderes en Seguridad Industrial"
-    subTitle="Empresas que confían en nuestros servicios"
-    partners={partnersData}
+    alt="Extintores y sistemas de seguridad FULLREX"
   />
 
   <FeaturesGeneral
