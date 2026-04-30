@@ -1,0 +1,29 @@
+{
+  "subTitle": "Pregúntanos sobre nuestros servicios y productos.",
+  "faqs": [
+    {
+      "question": "¿Dónde están ubicados?",
+      "answer": "Estamos en Quitumbe, calle Curaca y S41. Visítanos para consulta personalizada."
+    },
+    {
+      "question": "¿Qué marcas de cámaras manejan?",
+      "answer": "Trabajamos con Hikvision, Dahua, Ezviz e Imou. Todas con garantía y soporte técnico."
+    },
+    {
+      "question": "¿Tienen kits vehiculares?",
+      "answer": "Sí, ofrecemos kits vehiculares completos con extintor, soporte, pin y certificación INEN."
+    },
+    {
+      "question": "¿Qué tipos de mantenimiento ofrecen?",
+      "answer": "Mantenimiento físico: inspección, pruebas hidrostáticas, recarga de extintores PQS y CO2. Mantenimiento electrónico: sistemas de alarmas y CCTV."
+    },
+    {
+      "question": "¿Los extintores cumplen normativa INEN?",
+      "answer": "Sí, todos nuestros extintores cumplen con la norma INEN 731 y cuentan con certificación."
+    },
+    {
+      "question": "¿Ofrecen servicio de instalación?",
+      "answer": "Sí, incluimos instalación profesional en todos nuestros planes de cámaras y sistemas de alarma."
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+<svg
+  {...Astro.props}
+  viewBox="0 0 600 240"
+  fill="none"
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <title>FullRex Logo</title>
+
+  <defs>
+    <!-- Filtro de sombra suave para mayor profundidad -->
+
+    <filter id="softShadow" x="-10%" y="-10%" width="140%" height="140%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="3"></feGaussianBlur>
+
+      <feOffset dx="4" dy="4" result="offsetblur"></feOffset>
+
+      <feComponentTransfer>
+        <feFuncA type="linear" slope="0.4"></feFuncA>
+      </feComponentTransfer>
+
+      <feMerge>
+        <feMergeNode></feMergeNode>
+
+        <feMergeNode in="SourceGraphic"></feMergeNode>
+      </feMerge>
+    </filter>
+
+    <!-- Degradado sutil para el rayo para que no se vea plano -->
+
+    <linearGradient id="boltGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#faae1d"></stop>
+
+      <stop offset="100%" stop-color="#cc1111"></stop>
+    </linearGradient>
+
+    <style>
+      .text-style {
+        font-family: 'Inter', 'system-ui', 'Arial Black', sans-serif;
+
+        font-weight: 900;
+
+        font-size: 110px;
+
+        letter-spacing: -2px;
+
+        text-transform: uppercase;
+      }
+    </style>
+  </defs>
+
+  <!-- Grupo con sombra aplicada -->
+
+  <g filter="url(#softShadow)">
+    <!-- Texto FULL -->
+
+    <text x="30" y="160" class="text-style" fill="#cc1111">FULL</text>
+
+    <!-- Rayo Rediseñado (Más dinámico y central) -->
+
+    <path
+      d="M315 40 L285 125 H305 L280 205 L335 105 H310 L340 40 Z"
+      fill="#faae1d"
+      stroke="#cc1111"
+      stroke-width="2"
+      stroke-linejoin="round"></path>
+
+    <!-- Reflejo interno del rayo -->
+
+    <path
+      d="M318 55 L295 115 H315 L295 165 L325 115 H305 L325 55 Z"
+      fill="#fcd34d"
+      opacity="0.5"></path>
+
+    <!-- Texto REX -->
+
+    <text x="355" y="160" class="text-style" fill="#cc1111">REX</text>
+  </g>
+</svg>

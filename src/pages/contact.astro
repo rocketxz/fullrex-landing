@@ -1,0 +1,36 @@
+---
+// Import the necessary components
+import MainLayout from '@/layouts/MainLayout.astro';
+import ContactSection from '@components/sections/misc/ContactSection.astro';
+import { SITE } from '@data/constants';
+
+const pageTitle: string = `Contacto | ${SITE.title} Seguridad Industrial Quitumbe`;
+const metaDescription =
+  'Contáctanos para servicios de extintores, cámaras de seguridad y alarmas en Quitumbe. Visítanos o agenda una inspección técnica.';
+const ogTitle = 'Contacto | FULLREX Seguridad Industrial Quitumbe';
+---
+
+<MainLayout
+  title={pageTitle}
+  customDescription={metaDescription}
+  customOgTitle={ogTitle}
+  structuredData={{
+    '@context': 'https://schema.org',
+    '@type': 'WebPage',
+    '@id': 'https://fullrex-quitumbe.com/contact',
+    url: 'https://fullrex-quitumbe.com/contact',
+    name: 'Contacto | FULLREX',
+    description:
+      'Contáctanos para servicios de extintores, cámaras de seguridad y alarmas en Quitumbe.',
+    isPartOf: {
+      '@type': 'WebSite',
+      url: 'https://fullrex-quitumbe.com',
+      name: 'FULLREX',
+      description:
+        'Venta de equipos de seguridad en Quitumbe.',
+    },
+    inLanguage: 'es-EC',
+  }}
+>
+  <ContactSection />
+</MainLayout>

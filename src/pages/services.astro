@@ -1,0 +1,177 @@
+---
+// Import necessary components
+import MainLayout from '@/layouts/MainLayout.astro';
+import MainSection from '@components/ui/blocks/MainSection.astro';
+import LeftSection from '@components/ui/blocks/LeftSection.astro';
+import RightSection from '@components/ui/blocks/RightSection.astro';
+import FeaturesStats from '@components/sections/features/FeaturesStats.astro';
+
+// Import necessary images
+import blueprints from '@images/blueprints-image.avif';
+import personWorking from '@images/person-working.avif';
+import beforeAfter from '@images/before-after.avif';
+import constructionWorkers from '@images/construction-workers.avif';
+import aerialView from '@images/aerial-view.avif';
+import usingTools from '@images/using-tools.avif';
+import progressBuilding from '@images/progress-building.avif';
+import underConstruction from '@images/under-construction.avif';
+import { SITE } from '@data/constants';
+
+interface Article {
+  isRightSection: boolean;
+  title: string;
+  subTitle: string;
+  btnExists?: boolean;
+  btnTitle?: string;
+  btnURL?: string;
+  single?: boolean;
+  img?: any;
+  imgAlt?: string;
+  imgOne?: any;
+  imgOneAlt?: string;
+  imgTwo?: any;
+  imgTwoAlt?: string;
+}
+
+const articles: Article[] = [
+  {
+    isRightSection: true,
+    title: 'Prevención de Incendios',
+    subTitle:
+      'Protegemos tus activos con extintores certificados INEN 731. Recargamos y mantenemos extintores PQS y CO2 para que cumplas con las normativas de Bomberos y evites multas. Servicio técnico especializado con garantía de calidad.',
+    single: false,
+    imgOne: blueprints,
+    imgOneAlt: 'Extintores certificados y equipos de prevención',
+    imgTwo: personWorking,
+    imgTwoAlt: 'Técnico certificado realizando mantenimiento',
+  },
+  {
+    isRightSection: false,
+    title: 'Vigilancia Inteligente',
+    subTitle:
+      'Monitorea tu propiedad desde cualquier lugar con nuestro sistema de cámaras CCTV. Tecnología IA de detección de movimiento, alertas en tiempo real y acceso remoto desde tu celular. Marcas Hikvision, Dahua, Ezviz e Imou.',
+    img: beforeAfter,
+    imgAlt: 'Sistema de cámaras de seguridad',
+    btnExists: true,
+    btnTitle: 'Ver Productos',
+    btnURL: '/products',
+  },
+  {
+    isRightSection: true,
+    title: 'Mantenimiento Preventivo',
+    subTitle:
+      'No esperes a que falle. Nuestro servicio de mantenimiento preventivo asegura que tus sistemas de seguridad siempre estén operativos. Auditorías técnicas, pruebas hidrostáticas y soporte 24/7 para empresas y hogares.',
+    single: false,
+    imgOne: constructionWorkers,
+    imgOneAlt: 'Técnico realizando auditoría de seguridad',
+    imgTwo: aerialView,
+    imgTwoAlt: 'Instalación profesional de sistemas',
+  },
+  {
+    isRightSection: false,
+    title: 'Seguridad Integral 24/7',
+    subTitle:
+      'Soluciones completas para empresas e industrias. Sistemas de detección de humo, alarmas y respuesta inmediata. Cumplimiento legal garantizado y tranquilidad total para tu operación.',
+    img: usingTools,
+    imgAlt: 'Panel de control de seguridad',
+  },
+  {
+    isRightSection: true,
+    title: 'Kits de Seguridad Vehicular',
+    subTitle:
+      'Equipamiento obligatorio para vehículos de transporte y carga. Extintores vehiculares con certificación INEN, soportes, pines y documentación para cumplir con los requisitos de tránsito.',
+    single: false,
+    imgOne: progressBuilding,
+    imgOneAlt: 'Kit vehicular de seguridad',
+    imgTwo: underConstruction,
+    imgTwoAlt: 'Certificación de equipos vehiculares',
+    btnExists: true,
+    btnTitle: 'Solicitar Cotización',
+    btnURL: '/contact',
+  },
+];
+
+const pageTitle: string = `Servicios | ${SITE.title} Seguridad Industrial Quitumbe`;
+const metaDescription =
+  'Servicios de extintores, cámaras de seguridad y alarmas en Quitumbe. Recarga certificada INEN 731, instalación profesional y mantenimiento preventivo.';
+const ogTitle = 'Servicios de Seguridad Industrial | FULLREX Quitumbe';
+---
+
+<MainLayout
+  title={pageTitle}
+  customDescription={metaDescription}
+  customOgTitle={ogTitle}
+  structuredData={{
+    '@context': 'https://schema.org',
+    '@type': 'WebPage',
+    '@id': 'https://fullrex-quitumbe.com/services',
+    url: 'https://fullrex-quitumbe.com/services',
+    name: 'Servicios de Seguridad Industrial | FULLREX',
+    description:
+      'Servicios de extintores, cámaras de seguridad y alarmas en Quitumbe. Recarga certificada INEN 731, instalación profesional y mantenimiento preventivo.',
+    isPartOf: {
+      '@type': 'WebSite',
+      url: 'https://fullrex-quitumbe.com',
+      name: 'FULLREX',
+      description:
+        'Venta, recarga y mantenimiento de extintores y sistemas CCTV en Quitumbe.',
+    },
+    inLanguage: 'es-EC',
+  }}
+>
+  <MainSection
+    title="Expertos en Seguridad Industrial"
+    subTitle="En FULLREX no solo vendemos equipos, protegemos tus activos. Compromiso con la norma INEN 731, respaldo técnico especializado y tranquilidad total para empresas y hogares en Quitumbe."
+    btnExists={true}
+    btnTitle="Solicitar Auditoría Gratuita"
+    btnURL="/contact"
+  />
+  {
+    articles.map(article => {
+      return article.isRightSection ? (
+        <RightSection
+          title={article.title}
+          subTitle={article.subTitle}
+          single={article.single}
+          imgOne={article.imgOne}
+          imgOneAlt={article.imgOneAlt}
+          imgTwo={article.imgTwo}
+          imgTwoAlt={article.imgTwoAlt}
+          btnExists={article.btnExists}
+          btnTitle={article.btnTitle}
+          btnURL={article.btnURL}
+        />
+      ) : (
+        <LeftSection
+          title={article.title}
+          subTitle={article.subTitle}
+          img={article.img}
+          imgAlt={article.imgAlt}
+          btnExists={article.btnExists}
+          btnTitle={article.btnTitle}
+          btnURL={article.btnURL}
+        />
+      );
+    })
+  }
+  <FeaturesStats
+    title="Nuestra Trayectoria"
+    subTitle="Compromiso con la calidad y la confiabilidad. En FULLREX garantizamos servicios de seguridad industrial que protegen lo que más importa."
+    mainStatTitle="100%"
+    mainStatSubTitle="de nuestros clientes recomiendan nuestros servicios"
+    stats={[
+      {
+        stat: '500+',
+        description: 'extintores recargaados al año',
+      },
+      {
+        stat: 'Certificación',
+        description: 'INEN 731 garantizada',
+      },
+      {
+        stat: '24/7',
+        description: 'soporte técnico disponible',
+      },
+    ]}
+  />
+</MainLayout>

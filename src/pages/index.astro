@@ -1,0 +1,134 @@
+---
+// Import the necessary components
+import MainLayout from '@/layouts/MainLayout.astro';
+import HeroSection from '@components/sections/landing/HeroSection.astro';
+import HeroSectionAlt from '@components/sections/landing/HeroSectionAlt.astro';
+import FeaturesGeneral from '@components/sections/features/FeaturesGeneral.astro';
+import FeaturesNavs from '@components/sections/features/FeaturesNavs.astro';
+import TestimonialsSection from '@components/sections/testimonials/TestimonialsSection.astro';
+import PricingSection from '@components/sections/pricing/PricingSection.astro';
+import FAQ from '@components/sections/misc/FAQ.astro';
+import AnnouncementBanner from '@components/ui/banners/AnnouncementBanner.astro';
+import heroImage from '@images/hero-image.avif';
+import faqs from '@data/faqs.json';
+import features from '@data/features.json';
+import pricing from '@data/pricing.json';
+import featureImage from '@images/features-image.avif';
+import construction from '@images/construction-image.avif';
+import tools from '@images/automated-tools.avif';
+import dashboard from '@images/dashboard-image.avif';
+
+const avatarSrcs: Array<string> = [
+  'https://images.unsplash.com/photo-1568602471122-7832951cc4c5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=300&h=300&q=80',
+  'https://images.unsplash.com/photo-1531927557220-a9e23c1e4794?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=300&h=300&q=80',
+  'https://images.unsplash.com/photo-1541101767792-f9b2b1c4f127?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&&auto=format&fit=facearea&facepad=3&w=300&h=300&q=80',
+  'https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=300&h=300&q=80',
+];
+---
+
+<MainLayout>
+  <AnnouncementBanner
+    btnId="dismiss-button"
+    btnTitle="Visítanos en Quitumbe"
+    url="/contact"
+  />
+
+  <HeroSection
+    title=`VENTA, RECARGA Y MANTENIMIENTO <span class="text-yellow-500 dark:text-yellow-400">PROFESIONAL</span>`
+    subTitle="Seguridad para empresas y hogares en Quitumbe. Prevención de incendios y vigilancia avanzada."
+    primaryBtn="Ver Servicios"
+    primaryBtnURL="#servicios"
+    secondaryBtn="Contáctanos"
+    secondaryBtnURL="/contact"
+    withReview={true}
+    avatars={avatarSrcs}
+    rating=`<span class="font-bold">100%</span>`
+    starCount={5}
+    reviews=`Clientes satisfechos en <span class="font-bold">Quitumbe</span>`
+    src={heroImage}
+    alt="Extintores y sistemas de seguridad FULLREX"
+  />
+
+  <FeaturesGeneral
+    title="¿Qué OFRECEMOS?"
+    subTitle="Soluciones integrales de seguridad: extintores, cámaras y alarmas para proteger lo que más importa."
+    src={featureImage}
+    alt="Sistemas de seguridad FULLREX"
+    features={features}
+  />
+
+  <FeaturesNavs
+    title=`NUESTROS <span class="text-yellow-500 dark:text-yellow-400">SERVICIOS</span>`
+    tabs={[
+      {
+        heading: 'Extintores y Prevención',
+        content:
+          "Venta, recarga y mantenimiento de extintores PQS y CO2. Incluye kits vehiculares con certificación INEN 731.",
+        svg: 'sparks',
+        src: tools,
+        alt: 'Extintores profesionales',
+        first: true,
+      },
+      {
+        heading: 'Cámaras y Tecnología',
+        content:
+          "Sistemas CCTV Hikvision, Dahua, Ezviz, Imou. Acceso remoto desde tu móvil en tiempo real.",
+        svg: 'guides',
+        src: dashboard,
+        alt: 'Cámaras de seguridad',
+        second: true,
+      },
+      {
+        heading: 'Alarmas y Detección',
+        content:
+          "Sistemas de detección de humo y alarmas con mantenimiento electrónico profesional.",
+        svg: 'chatBubble',
+        src: construction,
+        alt: 'Sistemas de alarma',
+      },
+    ]}
+  />
+
+  <TestimonialsSection
+    title="Trayectoria y Confianza"
+    subTitle="Años de experiencia protegiendo empresas y hogares en Quitumbe."
+    testimonials={[
+      {
+        content:
+          'FULLREX nos ha demostrado profesionalismo en cada servicio. Extintores certificados y sistemas de cámaras funcionando perfectly.',
+        author: 'Cliente Empresas',
+        role: 'Sector Industrial | Quitumbe',
+        avatarSrc:
+          'https://images.unsplash.com/photo-1593104547489-5cfb3839a3b5?q=80&w=1453&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D8&auto=format&fit=facearea&facepad=2&w=320&h=320&q=80',
+      },
+    ]}
+    statistics={[
+      {
+        count: '500+',
+        description: 'extintores recargaados al año',
+      },
+      {
+        count: '100%',
+        description: 'certificación INEN 731',
+      },
+      {
+        count: '24/7',
+        description: 'soporte técnico disponible',
+      },
+      {
+        count: 'Quitumbe',
+        description: 'cobertura local',
+      },
+    ]}
+  />
+
+  <PricingSection pricing={pricing} />
+
+  <FAQ title="Preguntas<br />frecuentes" faqs={faqs} />
+
+  <HeroSectionAlt
+    title="Contáctanos"
+    subTitle="Visítanos en Quitumbe, calle Curaca y S41. Tel: 0961661643 - 0997827958"
+    url="/contact"
+  />
+</MainLayout>

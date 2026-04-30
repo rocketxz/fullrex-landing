@@ -1,0 +1,51 @@
+{
+  "title": "Planes de Seguridad",
+  "subTitle": "Soluciones adaptadas a tus necesidades. Marcas: Hikvision, Dahua, Ezviz, Imou.",
+  "badge": "Más popular",
+  "thirdOption": "¿Necesitas algo diferente?",
+  "btnText": "Contáctanos",
+  "starterKit": {
+    "name": "Kit Vehicular",
+    "description": "Seguridad básica para transporte y tránsito",
+    "price": "19",
+    "cents": ".99",
+    "billingFrequency": "USD",
+    "features": [
+      "Extintor vehicular",
+      "Soporte y pin",
+      "Certificación INEN"
+    ],
+    "purchaseBtnTitle": "Solicitar Cotización",
+    "purchaseLink": "#"
+  },
+  "professionalToolbox": {
+    "name": "Pack Seguridad Total",
+    "description": "Tranquilidad inteligente para tu hogar",
+    "price": "229",
+    "cents": ".99",
+    "billingFrequency": "USD",
+    "features": [
+      "2-4 Cámaras ColorVu",
+      "1 Detector de humo inteligente/autónomo",
+      "Monitoreo móvil 24/7",
+      "Instalación profesional Completa"
+    ],
+    "purchaseBtnTitle": "Solicitar Cotización",
+    "purchaseLink": "#"
+  },
+  "enterprise": {
+    "name": "Mantenimiento Integral",
+    "description": "Recargas masivas y auditoría técnica",
+    "price": "Desde",
+    "cents": "",
+    "billingFrequency": "USD/mes",
+    "features": [
+      "Recarga de extintores",
+      "Auditoría técnica",
+      "Mantenimiento preventivo",
+      "Soporte prioritario"
+    ],
+    "purchaseBtnTitle": "Solicitar Cotización",
+    "purchaseLink": "#"
+  }
+}

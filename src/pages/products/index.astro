@@ -1,0 +1,156 @@
+---
+// Importing necessary components
+import MainLayout from '@/layouts/MainLayout.astro';
+import PrimaryCTA from '@components/ui/buttons/PrimaryCTA.astro';
+import FeaturesStatsAlt from '@components/sections/features/FeaturesStatsAlt.astro';
+import TestimonialsSectionAlt from '@components/sections/testimonials/TestimonialsSectionAlt.astro';
+import { SITE } from '@data/constants';
+
+// Define variables for page content
+const title: string = 'Catálogo de Productos';
+const subTitle: string =
+  'Equipos de seguridad certificados para empresas y hogares. Extintores, cámaras y sistemas de alarma con garantía de calidad y soporte técnico.';
+
+// Testimonial data that will be rendered in the component
+const testimonials = [
+  {
+    content:
+      ' "Encontramos en FULLREX la solución completa para nuestra empresa. Extintores certificados y cámaras de excelente calidad. El servicio técnico es impecable." ',
+    author: 'Juan Carlos Mendoza',
+    role: 'Gerente de Operaciones | Industrias Quito',
+    avatarSrc:
+      'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=facearea&facepad=2&w=320&h=320&q=80',
+    avatarAlt: 'Foto de cliente',
+  },
+  {
+    content:
+      ' "Instalaron cámaras Hikvision en mi negocio y puedo monitorear desde mi celular. Excelente servicio y precios justos. Totalmente recomendado." ',
+    author: 'María Elena Torres',
+    role: 'Propietaria | Tienda derepuestos',
+    avatarSrc:
+      'https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=1376&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D8&auto=format&fit=facearea&facepad=2&w=320&h=320&q=80',
+    avatarAlt: 'Foto de cliente',
+  },
+  {
+    content:
+      " \"Cumplimientototal con la normativa de Bomberos. Nos ayudaron con la auditoría y ahora我们的empresa está 100% regulada. Gracias FULLREX.\" ",
+    author: 'Roberto Sánchez',
+    role: 'Director de Seguridad | Constructora Andina',
+    avatarSrc:
+      'https://images.unsplash.com/photo-1474176857210-7287d38d27c6?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D8&auto=format&fit=facearea&facepad=2&w=320&h=320&q=80',
+    avatarAlt: 'Foto de cliente',
+  },
+];
+
+const pageTitle: string = `Productos | ${SITE.title} Seguridad Quitumbe`;
+const metaDescription =
+  'Catálogo de extintores certificados INEN 731, cámaras de seguridad Hikvision/Dahua y sistemas de alarma en Quitumbe.';
+const ogTitle = 'Productos de Seguridad Industrial | FULLREX Quitumbe';
+---
+
+<MainLayout
+  title={pageTitle}
+  customDescription={metaDescription}
+  customOgTitle={ogTitle}
+  structuredData={{
+    '@context': 'https://schema.org',
+    '@type': 'WebPage',
+    '@id': 'https://fullrex-quitumbe.com/products',
+    url: 'https://fullrex-quitumbe.com/products',
+    name: 'Productos de Seguridad | FULLREX',
+    description:
+      'Catálogo de extintores, cámaras de seguridad y sistemas de alarma en Quitumbe.',
+    isPartOf: {
+      '@type': 'WebSite',
+      url: 'https://fullrex-quitumbe.com',
+      name: 'FULLREX',
+      description:
+        'Venta de equipos de seguridad en Quitumbe.',
+    },
+    inLanguage: 'es-EC',
+  }}
+>
+  <div
+    class="mx-auto max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 2xl:max-w-full"
+  >
+    <div class="mb-4 flex items-center justify-between gap-8 sm:mb-8 md:mb-12">
+      <div class="flex items-center gap-12">
+        <h1
+          class="text-2xl font-bold tracking-tight text-balance text-neutral-800 md:text-4xl md:leading-tight dark:text-neutral-200"
+        >
+          {title}
+        </h1>
+        {
+          subTitle && (
+            <p class="hidden max-w-(--breakpoint-sm) text-pretty text-neutral-600 md:block dark:text-neutral-400">
+              {subTitle}
+            </p>
+          )
+        }
+      </div>
+      <PrimaryCTA title="Ver Testimonios" url="#testimonials" noArrow={true} />
+    </div>
+
+    {/* Product Categories Grid */}
+    <section class="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-4">
+      {/* Category 1: Extintores */}
+      <div class="rounded-xl border border-neutral-200 bg-white p-6 dark:border-neutral-700 dark:bg-neutral-800">
+        <div class="mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-yellow-500">
+          <svg class="h-6 w-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.813 15.904L9 18.75l-.813-2.846a4.5 4.5 0 0 0-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 0 0 3.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 0 0 3.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 0 0-3.09 3.09Z" />
+          </svg>
+        </div>
+        <h3 class="mb-2 text-lg font-bold text-neutral-800 dark:text-neutral-200">Extintores PQS/CO2</h3>
+        <p class="text-sm text-neutral-600 dark:text-neutral-400">Certificación INEN 731. Recarga, mantenimiento y venta.</p>
+      </div>
+
+      {/* Category 2: Cámaras */}
+      <div class="rounded-xl border border-neutral-200 bg-white p-6 dark:border-neutral-700 dark:bg-neutral-800">
+        <div class="mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-yellow-500">
+          <svg class="h-6 w-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z" />
+          </svg>
+        </div>
+        <h3 class="mb-2 text-lg font-bold text-neutral-800 dark:text-neutral-200">Cámaras de Seguridad</h3>
+        <p class="text-sm text-neutral-600 dark:text-neutral-400">Hikvision, Dahua, Ezviz, Imou. Acceso móvil incluido.</p>
+      </div>
+
+      {/* Category 3: Alarmas */}
+      <div class="rounded-xl border border-neutral-200 bg-white p-6 dark:border-neutral-700 dark:bg-neutral-800">
+        <div class="mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-yellow-500">
+          <svg class="h-6 w-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9" />
+          </svg>
+        </div>
+        <h3 class="mb-2 text-lg font-bold text-neutral-800 dark:text-neutral-200">Sistemas de Alarma</h3>
+        <p class="text-sm text-neutral-600 dark:text-neutral-400">Detección de humo y alarma con soporte 24/7.</p>
+      </div>
+
+      {/* Category 4: Kits Vehiculares */}
+      <div class="rounded-xl border border-neutral-200 bg-white p-6 dark:border-neutral-700 dark:bg-neutral-800">
+        <div class="mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-yellow-500">
+          <svg class="h-6 w-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6" />
+          </svg>
+        </div>
+        <h3 class="mb-2 text-lg font-bold text-neutral-800 dark:text-neutral-200">Kits Vehiculares</h3>
+        <p class="text-sm text-neutral-600 dark:text-neutral-400">Cumplimiento normativo para transporte y carga.</p>
+      </div>
+    </section>
+  </div>
+
+  <FeaturesStatsAlt
+    title="¿Por qué elegir FULLREX?"
+    subTitle="Equipos de seguridad certificados con respaldo técnico especializado. Cumplimiento garantizado con normativas de Bomberos y Tránsito."
+    benefits={[
+      'Equipos con certificación INEN 731.',
+      'Marcas líderes: Hikvision, Dahua, Ezviz, Imou.',
+      'Soporte técnico y mantenimiento especializado.',
+    ]}
+  />
+
+  <TestimonialsSectionAlt
+    title="Lo que dicen nuestros clientes"
+    testimonials={testimonials}
+  />
+</MainLayout>
