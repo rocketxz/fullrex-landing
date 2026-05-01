@@ -2,11 +2,11 @@ import ogImageSrc from '@images/social.png';
 
 export const SITE = {
   title: 'FULLREX',
-  tagline: 'Extintores, Alarmas y Cámaras en Quitumbe',
+  tagline: 'Extintores, Cámaras y Alarmas en Quito',
   description:
-    'Venta, recarga y mantenimiento de extintores (INEN 731) y sistemas CCTV en Quitumbe. Seguridad para empresas y hogares.',
+    'Venta, recarga y mantenimiento de extintores certificados INEN 731. Cámaras Hikvision y alarmas en Quito. Cotización gratis ☎ 0961661643',
   description_short:
-    'Venta, recarga y mantenimiento de extintores (INEN 731) y sistemas CCTV en Quitumbe.',
+    'Extintores, cámaras de seguridad y alarmas en Quito — FULLREX.',
   url: 'https://fullrex-quitumbe.com',
   author: 'FULLREX',
 };
@@ -35,9 +35,9 @@ export const OG = {
   locale: 'es_EC',
   type: 'website',
   url: SITE.url,
-  title: 'FULLREX | Extintores, Alarmas y Cámaras en Quitumbe',
+  title: 'Extintores y Cámaras en Quito | FULLREX — Recarga INEN 731',
   description:
-    'Venta, recarga y mantenimiento de extintores (INEN 731) y CCTV en Quitumbe. Seguridad para empresas y hogares. Prevención de incendios y vigilancia avanzada.',
+    'Venta, recarga y mantenimiento de extintores certificados INEN 731. Cámaras Hikvision y alarmas en Quito. Cotización gratis ☎ 0961661643',
   image: ogImageSrc,
 };
 

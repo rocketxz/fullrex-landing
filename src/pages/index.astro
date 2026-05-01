@@ -26,9 +26,78 @@ const avatarSrcs: Array<string> = [
   'https://images.unsplash.com/photo-1541101767792-f9b2b1c4f127?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&&auto=format&fit=facearea&facepad=3&w=300&h=300&q=80',
   'https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=300&h=300&q=80',
 ];
+const localBusinessSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'LocalBusiness',
+  '@id': 'https://fullrex-quitumbe.com/#business',
+  'name': 'FULLREX — Extintores, Cámaras y Alarmas',
+  'image': 'https://fullrex-quitumbe.com/og-image.png',
+  'url': 'https://fullrex-quitumbe.com',
+  'telephone': '+593961661643',
+  'email': 'fullrex2000@gmail.com',
+  'description': 'Venta, recarga y mantenimiento de extintores certificados INEN 731. Instalación de cámaras de seguridad Hikvision, Dahua, Ezviz e Imou en Quito.',
+  'address': {
+    '@type': 'PostalAddress',
+    'streetAddress': 'Calle Curaca y S41',
+    'addressLocality': 'Quito',
+    'addressRegion': 'Pichincha',
+    'postalCode': '170150',
+    'addressCountry': 'EC',
+  },
+  'geo': {
+    '@type': 'GeoCoordinates',
+    'latitude': -0.3075,
+    'longitude': -78.5514,
+  },
+  'areaServed': [
+    { '@type': 'City', 'name': 'Quito' },
+    { '@type': 'City', 'name': 'Guayaquil' },
+    { '@type': 'City', 'name': 'Cuenca' },
+    { '@type': 'Country', 'name': 'Ecuador' },
+  ],
+  'priceRange': '$$',
+  'priceCurrency': 'USD',
+  'openingHoursSpecification': [
+    {
+      '@type': 'OpeningHoursSpecification',
+      'dayOfWeek': ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
+      'opens': '08:00',
+      'closes': '18:00',
+    },
+    {
+      '@type': 'OpeningHoursSpecification',
+      'dayOfWeek': 'Saturday',
+      'opens': '08:00',
+      'closes': '14:00',
+    },
+  ],
+  'sameAs': [
+    'https://www.facebook.com/fullrex',
+    'https://www.tiktok.com/@full.rex.quitumbe',
+    'https://wa.me/593961661643',
+  ],
+};
+
+const faqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  'mainEntity': faqs.faqs.map((faq: { question: string; answer: string }) => ({
+    '@type': 'Question',
+    'name': faq.question,
+    'acceptedAnswer': {
+      '@type': 'Answer',
+      'text': faq.answer,
+    },
+  })),
+};
 ---
 
-<MainLayout>
+<MainLayout
+  title="Extintores y Cámaras en Quito | FULLREX — Recarga INEN 731"
+  customDescription="Venta, recarga y mantenimiento de extintores certificados INEN 731. Cámaras Hikvision y alarmas en Quito. Cotización gratis ☎ 0961661643"
+  customOgTitle="Extintores y Cámaras en Quito | FULLREX — Recarga INEN 731"
+  structuredData={localBusinessSchema}
+>
   <AnnouncementBanner
     btnId="dismiss-button"
     btnTitle="Visítanos en Quitumbe"
@@ -113,7 +182,7 @@ const avatarSrcs: Array<string> = [
     statistics={[
       {
         count: '500+',
-        description: 'extintores recargaados al año',
+        description: 'extintores recargados al año',
       },
       {
         count: '100%',
@@ -133,6 +202,7 @@ const avatarSrcs: Array<string> = [
   <PricingSection pricing={pricing} />
 
   <FAQ title="Preguntas<br />frecuentes" faqs={faqs} />
+  <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
 
   <HeroSectionAlt
     title="Contáctanos"
