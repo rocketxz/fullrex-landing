@@ -5,12 +5,12 @@
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
-    "build": "astro check && astro build && node process-html.mjs",
+    "build": "rm -rf .wrangler && astro check && astro build && node process-html.mjs",
     "format:check": "prettier --check .",
     "format:fix": "prettier --write .",
     "preview": "astro preview",
-    "deploy": "rm -rf .wrangler && wrangler pages deploy dist --project-name fullrex",
-    "deploy:preview": "rm -rf .wrangler && wrangler pages deploy dist --project-name fullrex --branch preview",
+    "deploy": "wrangler pages deploy dist --project-name fullrex",
+    "deploy:preview": "wrangler pages deploy dist --project-name fullrex --branch preview",
     "astro": "astro"
   },
   "dependencies": {
