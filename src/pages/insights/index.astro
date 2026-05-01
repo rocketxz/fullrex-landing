@@ -1,0 +1,93 @@
+---
+import MainLayout from '@/layouts/MainLayout.astro';
+import { getCollection } from 'astro:content';
+import { Image } from 'astro:assets';
+import { SITE } from '@data/constants';
+
+const insightPosts = await getCollection('insights', ({ id }) =>
+  id.startsWith('en/')
+);
+
+const pageTitle: string = `Blog | ${SITE.title} Seguridad Industrial`;
+const metaDescription =
+  'Artículos sobre seguridad industrial, mantenimiento de extintores, cámaras de seguridad y normativa de Bomberos en Ecuador.';
+const ogTitle = 'Blog | FULLREX Seguridad Industrial Quitumbe';
+---
+
+<MainLayout
+  title={pageTitle}
+  customDescription={metaDescription}
+  customOgTitle={ogTitle}
+  structuredData={{
+    '@context': 'https://schema.org',
+    '@type': 'WebPage',
+    '@id': 'https://fullrex-quitumbe.com/insights',
+    url: 'https://fullrex-quitumbe.com/insights',
+    name: 'Blog | FULLREX',
+    description: metaDescription,
+    isPartOf: {
+      '@type': 'WebSite',
+      url: 'https://fullrex-quitumbe.com',
+      name: 'FULLREX',
+      description:
+        'Venta de equipos de seguridad en Quitumbe.',
+    },
+    inLanguage: 'es-EC',
+  }}
+>
+  <div
+    class="mx-auto max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 2xl:max-w-full"
+  >
+    <div class="mb-4 flex items-center justify-between gap-8 sm:mb-8 md:mb-12">
+      <div class="flex items-center gap-12">
+        <h1
+          class="text-2xl font-bold tracking-tight text-balance text-neutral-800 md:text-4xl md:leading-tight dark:text-neutral-200"
+        >
+          Blog FULLREX
+        </h1>
+        <p class="hidden max-w-(--breakpoint-sm) text-pretty text-neutral-600 md:block dark:text-neutral-400">
+          Guías, consejos y noticias sobre seguridad industrial, prevención de incendios y videovigilancia en Ecuador.
+        </p>
+      </div>
+    </div>
+
+    <section class="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
+      {
+        insightPosts.map((post) => {
+          const slug = post.id.replace(/^en\//, '');
+          return (
+            <a
+              href={`/insights/${slug}`}
+              class="group block overflow-hidden rounded-xl border border-neutral-200 bg-white transition duration-300 hover:shadow-lg hover:border-yellow-400 dark:border-neutral-700 dark:bg-neutral-800 dark:hover:border-yellow-500"
+              data-astro-prefetch
+            >
+              <div class="h-48 overflow-hidden">
+                <Image
+                  class="h-full w-full object-cover object-center transition duration-500 group-hover:scale-105"
+                  src={post.data.cardImage}
+                  alt={post.data.cardImageAlt}
+                  draggable={'false'}
+                  format={'webp'}
+                />
+              </div>
+              <div class="p-5">
+                <h2 class="mb-2 text-lg font-bold text-neutral-800 transition duration-300 group-hover:text-yellow-600 dark:text-neutral-200 dark:group-hover:text-yellow-400">
+                  {post.data.title}
+                </h2>
+                <p class="text-sm text-neutral-600 dark:text-neutral-400">
+                  {post.data.description}
+                </p>
+                <span class="mt-4 inline-flex items-center gap-x-1 text-sm font-medium text-yellow-600 dark:text-yellow-400">
+                  Leer artículo
+                  <svg class="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                  </svg>
+                </span>
+              </div>
+            </a>
+          );
+        })
+      }
+    </section>
+  </div>
+</MainLayout>

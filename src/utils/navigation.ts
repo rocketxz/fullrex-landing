@@ -3,6 +3,7 @@ const navBarLinks = [
   { name: 'Inicio', url: '/' },
   { name: 'Servicios', url: '/services' },
   { name: 'Productos', url: '/products' },
+  { name: 'Blog', url: '/insights' },
   { name: 'Contacto', url: '/contact' },
 ];
 
@@ -19,7 +20,7 @@ const footerLinks = [
   {
     section: 'Empresa',
     links: [
-      { name: 'Sobre Nosotros', url: '/contact' },
+      { name: 'Blog', url: '/insights' },
       { name: 'Contáctanos', url: '/contact' },
       { name: 'Ubicación', url: '/contact' },
     ],

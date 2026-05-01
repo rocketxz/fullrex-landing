@@ -1,42 +1,76 @@
 ---
-title: 'The Future of Construction Technology'
-description: "Explore ScrewFast's pioneering role in revolutionizing construction through advanced technology and innovative solutions."
+title: 'Cómo Mantener tu Extintor en Óptimas Condiciones: Guía Completa'
+description: 'Aprende cuándo recargar tu extintor, cómo verificar su presión y qué dice la norma INEN 731 sobre el mantenimiento obligatorio de extintores en Ecuador.'
 cardImage: '@/images/insights/insight-1.avif'
-cardImageAlt: 'Top view mechanical tools arrangement'
+cardImageAlt: 'Extintor de polvo químico seco en buen estado de mantenimiento'
 ---
 
-In the world of construction, where innovation meets practicality, ScrewFast stands as a beacon of pioneering advancements. For years, this company has been at the forefront of revolutionizing construction through its unwavering commitment to advanced technology and innovative solutions. From skyscrapers to bridges, ScrewFast has left an indelible mark on the industry, shaping the future of construction in ways once thought unimaginable.
+Los extintores son tu primera línea de defensa contra incendios, pero un extintor sin mantenimiento puede fallar en el momento más crítico. En Ecuador, la **norma INEN 731** establece requisitos específicos para la recarga y mantenimiento de extintores que toda empresa debe cumplir.
 
-## A Legacy of Innovation
+## ¿Cada cuánto tiempo debo recargar mi extintor?
 
-Founded with a vision to redefine the norms of construction, ScrewFast embarked on a journey marked by relentless innovation. Since its inception, the company has continually pushed the boundaries of what is possible, introducing groundbreaking technologies that have transformed the way structures are built.
+La normativa ecuatoriana establece que los extintores deben ser **recargados anualmente**, independientemente de si han sido utilizados o no. Sin embargo, existen situaciones donde la recarga debe realizarse antes:
 
-## Reinventing Foundation Systems
+- **Después de cualquier uso**, incluso parcial
+- Cuando el **manómetro indica presión baja** (zona roja)
+- Si el **sello de seguridad** está roto o falta el pasador
+- Cuando se detecta **corrosión visible** en el cilindro
+- Después de una **inspección visual mensual** que revele anomalías
 
-At the heart of ScrewFast's success lies its revolutionary approach to foundation systems. Traditionally, the process of laying foundations has been cumbersome and time-consuming, often requiring extensive excavation and manual labor. However, ScrewFast's innovative solutions have changed the game entirely.
+## Los 5 Pasos de una Inspección Visual Mensual
 
-By leveraging advanced techniques such as helical pile installation, ScrewFast has streamlined the foundation process, significantly reducing both time and cost. These helical piles, with their screw-like design, offer unparalleled stability and can be installed with remarkable efficiency, making them the go-to choice for projects of all sizes.
+Como propietario o encargado de seguridad, puedes realizar estas verificaciones básicas cada mes:
 
-## Embracing Digitalization
+### 1. Verificar la Presión
 
-In an era dominated by digitalization, ScrewFast has embraced technology wholeheartedly, harnessing its power to drive efficiency and precision. Through the use of advanced software and modeling techniques, the company has revolutionized the design and planning phases of construction projects.
+El manómetro debe estar en la **zona verde**. Si la aguja está en la zona roja (baja presión) o en la zona de sobrepresión, el extintor necesita servicio profesional inmediato.
 
-From 3D modeling to Building Information Modeling (BIM), ScrewFast employs cutting-edge tools to create detailed simulations of structures, allowing for better visualization and optimization. This digital approach not only enhances the accuracy of construction plans but also enables seamless collaboration among architects, engineers, and builders.
+### 2. Revisar el Sello y Pasador
 
-## Sustainable Solutions for a Greener Tomorrow
+El **sello de seguridad** (precinto plástico) debe estar intacto. Si está roto, alguien pudo haber manipulado el extintor o podría haberse descargado parcialmente.
 
-In a world increasingly concerned with sustainability, ScrewFast has taken proactive steps to minimize its environmental footprint. By prioritizing eco-friendly materials and sustainable construction practices, the company is leading the charge towards a greener future.
+### 3. Inspeccionar la Manguera
 
-One notable example is ScrewFast's commitment to modular construction—a method that involves prefabricating building components off-site and assembling them on-site. This approach not only reduces construction waste but also minimizes disruption to local ecosystems, making it a win-win for both builders and the environment.
+La manguera no debe tener **grietas, cortes ni obstrucciones**. Verifica que la boquilla esté limpia y libre de residuos.
 
-## The Road Ahead: Challenges and Opportunities
+### 4. Verificar el Estado del Cilindro
 
-As ScrewFast continues to push the boundaries of construction technology, it faces a myriad of challenges and opportunities on the horizon. From navigating regulatory hurdles to adapting to evolving industry trends, the road ahead is fraught with complexities.
+Busca señales de **corrosión, abolladuras o daño físico** en el cuerpo del extintor. Un cilindro dañado puede ser peligroso bajo presión.
 
-However, with its unwavering dedication to innovation and a track record of success, ScrewFast is well-positioned to overcome these obstacles and continue shaping the future of construction for generations to come. As the industry marches towards an increasingly digital and sustainable future, ScrewFast stands as a beacon of progress, leading the way towards a world where construction is not just efficient and cost-effective but also environmentally responsible.
+### 5. Confirmar la Accesibilidad
 
-## Conclusion
+El extintor debe estar **visible, accesible y señalizado** correctamente. No debe estar obstruido por cajas, muebles u otros objetos.
 
-In the ever-evolving landscape of construction technology, ScrewFast remains a trailblazer, constantly pushing the boundaries of what is possible. Through its commitment to innovation, digitalization, and sustainability, the company has not only revolutionized the way structures are built but has also set a new standard for excellence in the industry.
+## ¿Qué dice la Norma INEN 731?
 
-As we look towards the future, one thing is clear: the legacy of ScrewFast will continue to shape the world of construction for years to come, inspiring generations of builders to dream big and push the limits of possibility. With ScrewFast leading the way, the future of construction has never looked brighter.
+La norma INEN 731 regula los **extintores portátiles de polvo químico seco (PQS)** en Ecuador y establece:
+
+- **Recarga anual obligatoria** por un proveedor certificado
+- **Prueba hidrostática cada 5 años** para verificar la integridad del cilindro
+- Los extintores deben tener una **etiqueta de servicio** con la fecha de la última recarga
+- El polvo químico debe cumplir con **especificaciones de granulometría y composición**
+
+## ¿Qué exige el Cuerpo de Bomberos para tu negocio?
+
+Para obtener o renovar el **permiso de funcionamiento** del Cuerpo de Bomberos en Quito, tu negocio debe cumplir con:
+
+- Extintores **recargados y certificados** vigentes
+- **Señalización** adecuada de rutas de evacuación
+- **Plan de emergencia** documentado
+- Extintor del **tipo y capacidad correcta** según el área y actividad comercial
+
+## Tipos de Extintores según el Riesgo
+
+| Tipo de Fuego | Clase | Extintor Recomendado |
+|---|---|---|
+| Materiales sólidos (madera, papel, tela) | A | PQS o Agua |
+| Líquidos inflamables (gasolina, aceite) | B | PQS o CO2 |
+| Equipos eléctricos | C | PQS o CO2 |
+| Metales combustibles | D | Polvo especial |
+| Aceites de cocina | K | Agente húmedo |
+
+## ¿Necesitas Recargar tu Extintor?
+
+En **FULLREX** ofrecemos servicio completo de recarga, mantenimiento y certificación de extintores en **Quitumbe y todo el sur de Quito**. Nuestro equipo técnico está certificado y cumplimos estrictamente con la norma INEN 731.
+
+**Contáctanos** para agendar una inspección o recarga a domicilio. También realizamos auditorías técnicas para el cumplimiento con Bomberos.
