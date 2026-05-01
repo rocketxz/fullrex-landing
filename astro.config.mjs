@@ -1,6 +1,7 @@
 import { defineConfig } from 'astro/config';
 import tailwindcss from '@tailwindcss/vite';
 import sitemap from '@astrojs/sitemap';
+import cloudflare from '@astrojs/cloudflare';
 
 import mdx from '@astrojs/mdx';
 
@@ -10,13 +11,20 @@ export default defineConfig({
   site: 'https://fullrex-quitumbe.com',
   image: {
     domains: ['images.unsplash.com'],
+    endpoint: {
+      route: '/images',
+    },
   },
   compressHTML: true,
   prefetch: true,
+  build: {
+    assets: 'assets',
+  },
   integrations: [
     sitemap(),
     mdx(),
   ],
+  adapter: cloudflare(),
   experimental: {
     clientPrerender: true,
   },
