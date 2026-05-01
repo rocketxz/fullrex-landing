@@ -41,7 +41,7 @@ const formSubTitle: string = 'Te respondemos en 24 horas.';
           /* Form for user input with various input fields.>
         {/* Each field utilizes a different input component for the specific type of input (text, email, phone, and textarea)*/
         }
-        <form>
+        <form id="contact-form">
           <div class="grid gap-4">
             <div class="grid grid-cols-1 gap-4 sm:grid-cols-2">
               <TextInput
@@ -65,7 +65,7 @@ const formSubTitle: string = 'Te respondemos en 24 horas.';
           </div>
 
           <div class="mt-4 grid">
-            <AuthBtn title="Enviar Mensaje" />
+            <AuthBtn title="Enviar por WhatsApp" />
           </div>
 
           <div class="mt-3 text-center">
@@ -74,6 +74,32 @@ const formSubTitle: string = 'Te respondemos en 24 horas.';
             </p>
           </div>
         </form>
+
+        <script>
+          document.getElementById('contact-form')?.addEventListener('submit', function(e) {
+            e.preventDefault();
+
+            const nombre = (document.getElementById('hs-firstname-contacts') as HTMLInputElement)?.value || '';
+            const apellido = (document.getElementById('hs-lastname-contacts') as HTMLInputElement)?.value || '';
+            const email = (document.getElementById('hs-email-contacts') as HTMLInputElement)?.value || '';
+            const telefono = (document.getElementById('hs-phone-number') as HTMLInputElement)?.value || '';
+            const mensaje = (document.getElementById('hs-about-contacts') as HTMLTextAreaElement)?.value || '';
+
+            if (!nombre.trim() || !mensaje.trim()) {
+              alert('Por favor, completa al menos tu nombre y mensaje.');
+              return;
+            }
+
+            const texto = `🔒 *Nuevo mensaje desde FULLREX Web*\n\n` +
+              `👤 *Nombre:* ${nombre} ${apellido}\n` +
+              `📧 *Email:* ${email}\n` +
+              `📞 *Teléfono:* ${telefono}\n` +
+              `💬 *Mensaje:*\n${mensaje}`;
+
+            const url = `https://wa.me/593961661643?text=${encodeURIComponent(texto)}`;
+            window.open(url, '_blank');
+          });
+        </script>
       </div>
 
       {
@@ -92,8 +118,8 @@ const formSubTitle: string = 'Te respondemos en 24 horas.';
           heading="Escríbenos"
           content="¿Prefieres escribir? Contáctanos por email"
           isLinkVisible={true}
-          linkTitle="contacto@fullrex-quitumbe.com"
-          linkURL="mailto:contacto@fullrex-quitumbe.com"
+          linkTitle="fullrex2000@gmail.com"
+          linkURL="mailto:fullrex2000@gmail.com"
           ><Icon name="envelopeOpen" />
         </ContactIconBlock>
 

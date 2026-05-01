@@ -21,7 +21,7 @@ import tools from '@images/automated-tools.avif';
 import dashboard from '@images/dashboard-image.avif';
 
 const avatarSrcs: Array<string> = [
-  'https://images.unsplash.com/photo-1568602471122-7832951cc4c5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=300&h=300&q=80',
+  'https://images.unsplash.com/photo-1568602471122-7832951cc4c5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGV ufDB8fHx8&auto=format&fit=facearea&facepad=2&w=300&h=300&q=80',
   'https://images.unsplash.com/photo-1531927557220-a9e23c1e4794?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=300&h=300&q=80',
   'https://images.unsplash.com/photo-1541101767792-f9b2b1c4f127?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&&auto=format&fit=facearea&facepad=3&w=300&h=300&q=80',
   'https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=300&h=300&q=80',
@@ -39,15 +39,16 @@ const avatarSrcs: Array<string> = [
     title=`VENTA, RECARGA Y MANTENIMIENTO <span class="text-yellow-500 dark:text-yellow-400">PROFESIONAL</span>`
     subTitle="Seguridad para empresas y hogares en Quitumbe. Prevención de incendios y vigilancia avanzada."
     primaryBtn="Ver Servicios"
-    primaryBtnURL="#servicios"
+    primaryBtnURL="/services"
     secondaryBtn="Contáctanos"
     secondaryBtnURL="/contact"
     withReview={true}
     avatars={avatarSrcs}
     rating=`<span class="font-bold">100%</span>`
     starCount={5}
-    reviews=`Clientes satisfechos en <span class="font-bold">Quitumbe</span>`
+    reviews=`Clientes satisfechos en <span class="font-bold">Quito</span>`
     src={heroImage}
+    alt="Extintores y sistemas de seguridad FULLREX"
   />
 
   <ClientsSection
@@ -70,7 +71,7 @@ const avatarSrcs: Array<string> = [
       {
         heading: 'Extintores y Prevención',
         content:
-          "Venta, recarga y mantenimiento de extintores PQS y CO2. Incluye kits vehiculares con certificación INEN 731.",
+          'Venta, recarga y mantenimiento de extintores PQS y CO2. Incluye kits vehiculares con certificación INEN 731.',
         svg: 'sparks',
         src: tools,
         alt: 'Extintores profesionales',
@@ -79,7 +80,7 @@ const avatarSrcs: Array<string> = [
       {
         heading: 'Cámaras y Tecnología',
         content:
-          "Sistemas CCTV Hikvision, Dahua, Ezviz, Imou. Acceso remoto desde tu móvil en tiempo real.",
+          'Sistemas CCTV Hikvision, Dahua, Ezviz, Imou. Acceso remoto desde tu móvil en tiempo real.',
         svg: 'guides',
         src: dashboard,
         alt: 'Cámaras de seguridad',
@@ -88,7 +89,7 @@ const avatarSrcs: Array<string> = [
       {
         heading: 'Alarmas y Detección',
         content:
-          "Sistemas de detección de humo y alarmas con mantenimiento electrónico profesional.",
+          'Sistemas de detección de humo y alarmas con mantenimiento electrónico profesional.',
         svg: 'chatBubble',
         src: construction,
         alt: 'Sistemas de alarma',
@@ -102,9 +103,9 @@ const avatarSrcs: Array<string> = [
     testimonials={[
       {
         content:
-          'FULLREX nos ha demostrado profesionalismo en cada servicio. Extintores certificados y sistemas de cámaras funcionando perfectly.',
-        author: 'Cliente Empresas',
-        role: 'Sector Industrial | Quitumbe',
+          'FULLREX nos ha demostrado profesionalismo en cada servicio. Extintores certificados y sistemas de cámaras funcionando perfectamente.',
+        author: 'Roxana Martinez',
+        role: 'Sector Industrial | Quito',
         avatarSrc:
           'https://images.unsplash.com/photo-1593104547489-5cfb3839a3b5?q=80&w=1453&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D8&auto=format&fit=facearea&facepad=2&w=320&h=320&q=80',
       },

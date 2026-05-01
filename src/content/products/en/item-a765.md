@@ -49,6 +49,6 @@ tableData:
       - ['Finish', 'Assorted']
       - ['Package Contents', 'Various screws in a set']
 blueprints:
-  first: '@/images/blueprint-1.avif'
-  second: '@/images/blueprint-2.avif'
+  first: '@/images/blueprint-3.avif'
+  second: '@/images/blueprint-4.avif'
 ---
