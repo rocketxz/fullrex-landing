@@ -5,7 +5,7 @@ import Btn404 from '@components/ui/buttons/Btn404.astro';
 import { SITE } from '@data/constants';
 
 // Define types for translations
-type TranslationKeys = 'en' | 'fr';
+type TranslationKeys = 'en' | 'fr' | 'es';
 type Translations = {
   [key in TranslationKeys]: {
     pageTitle: string;
@@ -16,8 +16,15 @@ type Translations = {
 };
 
 // Define variables for page content
-const defaultLang: TranslationKeys = 'en';
+const defaultLang: TranslationKeys = 'es';
 const translations: Translations = {
+  es: {
+    pageTitle: `Página no encontrada | ${SITE.title}`,
+    subTitle: '¡Ups, parece que te has perdido!',
+    content:
+      'No dejes que esto te detenga. Regresa a la página principal para encontrar lo que necesitas.',
+    btnTitle: 'Regresar',
+  },
   en: {
     pageTitle: `Page Not Found | ${SITE.title}`,
     subTitle: "Oops, this isn't the tool you were looking for!",
@@ -36,7 +43,7 @@ const translations: Translations = {
 
 // Determine language from the URL
 const urlPath = Astro.url.pathname;
-const langCodeMatch = urlPath.match(/^\/(en|fr)\//);
+const langCodeMatch = urlPath.match(/^\/(en|fr|es)\//);
 const lang: TranslationKeys = langCodeMatch
   ? (langCodeMatch[1] as TranslationKeys)
   : defaultLang;
@@ -44,7 +51,7 @@ const lang: TranslationKeys = langCodeMatch
 const { pageTitle, subTitle, content, btnTitle } = translations[lang];
 ---
 
-<MainLayout title={pageTitle}>
+<MainLayout title={pageTitle} lang={lang}>
   <section class="grid h-svh place-content-center">
     <div class="mx-auto max-w-(--breakpoint-xl) px-4 py-8 lg:px-6 lg:py-16">
       <div class="mx-auto max-w-(--breakpoint-sm) text-center">
