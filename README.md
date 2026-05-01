@@ -1,6 +1,6 @@
 # FULLREX - Seguridad Industrial Quitumbe
 
-![FULLREX](https://via.placeholder.com/800x400/FFA500/000000?text=FULLREX+Seguridad+Industrial)
+<img width="1905" height="897" alt="image" src="https://github.com/user-attachments/assets/5717b1ee-f171-40e3-876f-913d3120b44c" />
 
 **FULLREX** es una empresa líder en **seguridad industrial** ubicada en Quitumbe, sur de Quito, especializada en soluciones integrales de protección contra incendios, vigilancia y alarmas.
 
