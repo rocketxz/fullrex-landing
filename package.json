@@ -9,6 +9,8 @@
     "format:check": "prettier --check .",
     "format:fix": "prettier --write .",
     "preview": "astro preview",
+    "deploy": "wrangler deploy --config dist/server/wrangler.json",
+    "deploy:preview": "wrangler versions upload --config dist/server/wrangler.json",
     "astro": "astro"
   },
   "dependencies": {
