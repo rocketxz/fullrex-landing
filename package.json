@@ -9,8 +9,8 @@
     "format:check": "prettier --check .",
     "format:fix": "prettier --write .",
     "preview": "astro preview",
-    "deploy": "wrangler deploy --config dist/server/wrangler.json",
-    "deploy:preview": "wrangler versions upload --config dist/server/wrangler.json",
+    "deploy": "wrangler pages deploy dist --project-name fullrex",
+    "deploy:preview": "wrangler pages deploy dist --project-name fullrex --branch preview",
     "astro": "astro"
   },
   "dependencies": {
