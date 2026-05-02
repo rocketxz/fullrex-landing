@@ -30,48 +30,49 @@ const localBusinessSchema = {
   '@context': 'https://schema.org',
   '@type': 'LocalBusiness',
   '@id': 'https://fullrexquitumbe.com/#business',
-  'name': 'FULLREX — Extintores, Cámaras y Alarmas',
-  'image': 'https://fullrexquitumbe.com/og-image.png',
-  'url': 'https://fullrexquitumbe.com',
-  'telephone': '+593961661643',
-  'email': 'fullrex2000@gmail.com',
-  'description': 'Venta, recarga y mantenimiento de extintores certificados INEN 731. Instalación de cámaras de seguridad Hikvision, Dahua, Ezviz e Imou en Quito.',
-  'address': {
+  name: 'FULLREX — Extintores, Cámaras y Alarmas',
+  image: 'https://fullrexquitumbe.com/og-image.png',
+  url: 'https://fullrexquitumbe.com',
+  telephone: '+593961661643',
+  email: 'fullrex2000@gmail.com',
+  description:
+    'Líderes en seguridad industrial en Ecuador. Especialistas en extintores certificados INEN 731 para inspección de bomberos y sistemas avanzados de cámaras de vigilancia CCTV.',
+  address: {
     '@type': 'PostalAddress',
-    'streetAddress': 'Calle Curaca y S41',
-    'addressLocality': 'Quito',
-    'addressRegion': 'Pichincha',
-    'postalCode': '170150',
-    'addressCountry': 'EC',
+    streetAddress: 'Calle Curaca y S41',
+    addressLocality: 'Quito',
+    addressRegion: 'Pichincha',
+    postalCode: '170150',
+    addressCountry: 'EC',
   },
-  'geo': {
+  geo: {
     '@type': 'GeoCoordinates',
-    'latitude': -0.3075,
-    'longitude': -78.5514,
+    latitude: -0.3075,
+    longitude: -78.5514,
   },
-  'areaServed': [
-    { '@type': 'City', 'name': 'Quito' },
-    { '@type': 'City', 'name': 'Guayaquil' },
-    { '@type': 'City', 'name': 'Cuenca' },
-    { '@type': 'Country', 'name': 'Ecuador' },
+  areaServed: [
+    { '@type': 'City', name: 'Quito' },
+    { '@type': 'City', name: 'Guayaquil' },
+    { '@type': 'City', name: 'Cuenca' },
+    { '@type': 'Country', name: 'Ecuador' },
   ],
-  'priceRange': '$$',
-  'priceCurrency': 'USD',
-  'openingHoursSpecification': [
+  priceRange: '$$',
+  priceCurrency: 'USD',
+  openingHoursSpecification: [
     {
       '@type': 'OpeningHoursSpecification',
-      'dayOfWeek': ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
-      'opens': '08:00',
-      'closes': '18:00',
+      dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
+      opens: '08:00',
+      closes: '18:00',
     },
     {
       '@type': 'OpeningHoursSpecification',
-      'dayOfWeek': 'Saturday',
-      'opens': '08:00',
-      'closes': '14:00',
+      dayOfWeek: 'Saturday',
+      opens: '08:00',
+      closes: '14:00',
     },
   ],
-  'sameAs': [
+  sameAs: [
     'https://www.facebook.com/fullrex',
     'https://www.tiktok.com/@full.rex.quitumbe',
     'https://wa.me/593961661643',
@@ -81,21 +82,21 @@ const localBusinessSchema = {
 const faqSchema = {
   '@context': 'https://schema.org',
   '@type': 'FAQPage',
-  'mainEntity': faqs.faqs.map((faq: { question: string; answer: string }) => ({
+  mainEntity: faqs.faqs.map((faq: { question: string; answer: string }) => ({
     '@type': 'Question',
-    'name': faq.question,
-    'acceptedAnswer': {
+    name: faq.question,
+    acceptedAnswer: {
       '@type': 'Answer',
-      'text': faq.answer,
+      text: faq.answer,
     },
   })),
 };
 ---
 
 <MainLayout
-  title="Extintores y Cámaras en Quito | FULLREX — Recarga INEN 731"
-  customDescription="Venta, recarga y mantenimiento de extintores certificados INEN 731. Cámaras Hikvision y alarmas en Quito. Cotización gratis ☎ 0961661643"
-  customOgTitle="Extintores y Cámaras en Quito | FULLREX — Recarga INEN 731"
+  title="Extintores INEN 731 y Cámaras de Seguridad en Ecuador | FULLREX"
+  customDescription="Expertos en seguridad industrial. Venta de extintores para inspección de bomberos y sistemas de cámaras CCTV en todo el Ecuador. Protección garantizada."
+  customOgTitle="Extintores INEN 731 y Cámaras de Seguridad en Ecuador | FULLREX"
   structuredData={localBusinessSchema}
 >
   <AnnouncementBanner
@@ -106,7 +107,7 @@ const faqSchema = {
 
   <HeroSection
     title=`VENTA, RECARGA Y MANTENIMIENTO <span class="text-yellow-500 dark:text-yellow-400">PROFESIONAL</span>`
-    subTitle="Seguridad para empresas y hogares en el Ecuador. Prevención de incendios y vigilancia avanzada."
+    subTitle="Aprobamos tu inspección de Bomberos con extintores INEN 731 y protegemos tu patrimonio con cámaras de seguridad de última generación. Soluciones integrales para empresas y hogares."
     primaryBtn="Ver Servicios"
     primaryBtnURL="/services"
     secondaryBtn="Escríbenos por WhatsApp"
@@ -127,7 +128,7 @@ const faqSchema = {
   />
 
   <FeaturesGeneral
-    title="¿Qué OFRECEMOS?"
+    title="Seguridad que CUMPLE NORMAS"
     subTitle="Soluciones integrales de seguridad: extintores, cámaras y alarmas para proteger lo que más importa."
     src={featureImage}
     alt="Sistemas de seguridad FULLREX"
@@ -135,10 +136,10 @@ const faqSchema = {
   />
 
   <FeaturesNavs
-    title=`NUESTROS <span class="text-yellow-500 dark:text-yellow-400">SERVICIOS</span>`
+    title=`Tu Tranquilidad es <span class="text-yellow-500 dark:text-yellow-400">NUESTRA META</span>`
     tabs={[
       {
-        heading: 'Extintores y Prevención',
+        heading: 'Recarga Certificada INEN',
         content:
           'Venta, recarga y mantenimiento de extintores PQS y CO2. Incluye kits vehiculares con certificación INEN 731.',
         svg: 'sparks',
@@ -147,18 +148,18 @@ const faqSchema = {
         first: true,
       },
       {
-        heading: 'Cámaras y Tecnología',
+        heading: 'Vigilancia 24/7 en tu Móvil',
         content:
-          'Sistemas CCTV Hikvision, Dahua, Ezviz, Imou. Acceso remoto desde tu móvil en tiempo real.',
+          'Sistemas CCTV Hikvision y Dahua. Monitorea tu negocio u hogar en tiempo real desde cualquier lugar.',
         svg: 'guides',
         src: dashboard,
-        alt: 'Cámaras de seguridad',
+        alt: 'Cámaras de seguridad inteligentes',
         second: true,
       },
       {
-        heading: 'Alarmas y Detección',
+        heading: 'Detección Temprana',
         content:
-          'Sistemas de detección de humo y alarmas con mantenimiento electrónico profesional.',
+          'Sistemas de detección de humo y alarmas centralizadas para una respuesta inmediata.',
         svg: 'chatBubble',
         src: construction,
         alt: 'Sistemas de alarma',
