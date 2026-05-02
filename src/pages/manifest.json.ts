@@ -1,7 +1,7 @@
 import type { APIRoute, ImageMetadata } from 'astro';
 import { getImage } from 'astro:assets';
 import icon from '@images/icon.png';
-import maskableIcon from '@images/icon-maskable.png';
+
 
 interface Favicon {
   purpose: 'any' | 'maskable' | 'monochrome';
@@ -18,7 +18,7 @@ const favicons: Favicon[] = [
   },
   {
     purpose: 'maskable',
-    src: maskableIcon,
+    src: icon,
     sizes,
   },
 ];
@@ -44,13 +44,13 @@ export const GET: APIRoute = async () => {
   );
 
   const manifest = {
-    short_name: 'ScrewFast',
-    name: 'ScrewFast',
+    short_name: 'FULLREX',
+    name: 'FULLREX',
     icons,
     display: 'minimal-ui',
     id: '/',
     start_url: '/',
-    theme_color: '#FFEDD5',
+    theme_color: '#facc15',
     background_color: '#262626',
   };
 

@@ -5,8 +5,8 @@ main:
   id: 2
   content: |
     El Extintor PQS FR-10 de FULLREX es tu primera línea de defensa contra incendios Clase A, B y C. Fabricado con acero de alta presión y cargado con polvo químico seco de máxima calidad, está certificado bajo la norma INEN 731 para cumplir con las exigencias de Bomberos en empresas y vehículos de carga en Ecuador.
-  imgCard: '@/images/product-image-2.avif'
-  imgMain: '@/images/product-image-main-2.avif'
+  imgCard: '@/images/product-image-3.avif'
+  imgMain: '@/images/product-image-main-3.avif'
   imgAlt: 'Extintor de polvo químico seco 10 lbs FULLREX certificado INEN'
 tabs:
   - id: 'tabs-with-card-item-1'
@@ -50,6 +50,6 @@ specificationsRight:
   - title: 'Aplicaciones Recomendadas'
     subTitle: 'Locales comerciales, oficinas, bodegas, vehículos de carga pesada, industrias y viviendas.'
 blueprints:
-  first: '@/images/blueprint-3.avif'
-  second: '@/images/blueprint-4.avif'
+  first: '@/images/blueprints-image.avif'
+  second: '@/images/blueprints-image.avif'
 ---

@@ -5,8 +5,8 @@ main:
   id: 1
   content: |
     Presentamos la Hikvision DS-2CD2143G2-I – la cámara de vigilancia inteligente para entornos exigentes. Con resolución 4MP y tecnología AcuSense, esta cámara distingue entre humanos y vehículos para minimizar falsas alarmas, brindando seguridad precisa en tiempo real para tu empresa u hogar.
-  imgCard: '@/images/product-image-1.avif'
-  imgMain: '@/images/product-image-main-1.avif'
+  imgCard: '@/images/product-image-3.avif'
+  imgMain: '@/images/product-image-main-3.avif'
   imgAlt: 'Cámara Hikvision domo 4MP para videovigilancia'
 tabs:
   - id: 'tabs-with-card-item-1'
@@ -50,6 +50,6 @@ specificationsRight:
   - title: 'Compatibilidad'
     subTitle: 'Compatible con NVR Hikvision, plataforma Hik-Connect y aplicación móvil para monitoreo remoto 24/7.'
 blueprints:
-  first: '@/images/blueprint-1.avif'
-  second: '@/images/blueprint-2.avif'
+  first: '@/images/blueprints-image.avif'
+  second: '@/images/blueprints-image.avif'
 ---

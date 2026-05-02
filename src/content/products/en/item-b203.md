@@ -50,6 +50,6 @@ specificationsRight:
   - title: 'Aplicaciones Ideales'
     subTitle: 'Optimizado para naves industriales, almacenes, oficinas corporativas y centros logísticos que demandan máxima protección.'
 blueprints:
-  first: '@/images/blueprint-3.avif'
-  second: '@/images/blueprint-4.avif'
+  first: '@/images/blueprints-image.avif'
+  second: '@/images/blueprints-image.avif'
 ---

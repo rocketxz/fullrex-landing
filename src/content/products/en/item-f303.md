@@ -5,8 +5,8 @@ main:
   id: 4
   content: |
     El Kit FR-ALARM Pro de FULLREX es la solución completa para proteger tu negocio o hogar las 24 horas del día. Combina sensores de movimiento PIR, detector de humo autónomo, sirena de alta potencia y panel central con comunicación GSM para notificaciones en tiempo real a tu teléfono celular sin necesidad de internet.
-  imgCard: '@/images/product-image-4.avif'
-  imgMain: '@/images/product-image-main-4.avif'
+  imgCard: '@/images/product-image-3.avif'
+  imgMain: '@/images/product-image-main-3.avif'
   imgAlt: 'Sistema de alarma contra intrusión y humo FULLREX para empresas y hogares'
 tabs:
   - id: 'tabs-with-card-item-1'
@@ -50,6 +50,6 @@ specificationsRight:
   - title: 'Instalación'
     subTitle: 'Instalación profesional incluida por técnicos certificados FULLREX en Quito y alrededores.'
 blueprints:
-  first: '@/images/blueprint-1.avif'
-  second: '@/images/blueprint-2.avif'
+  first: '@/images/blueprints-image.avif'
+  second: '@/images/blueprints-image.avif'
 ---
