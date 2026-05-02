@@ -7,7 +7,7 @@ export const SITE = {
     'Venta, recarga y mantenimiento de extintores certificados INEN 731. Cámaras Hikvision y alarmas en Quito. Cotización gratis ☎ 0961661643',
   description_short:
     'Extintores, cámaras de seguridad y alarmas en Quito — FULLREX.',
-  url: 'https://fullrex-quitumbe.com',
+  url: 'https://fullrexquitumbe.com',
   author: 'FULLREX',
 };
 
