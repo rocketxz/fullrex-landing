@@ -185,11 +185,33 @@ pnpm build
 ```
 Genera archivos estáticos optimizados en el directorio `dist/`.
 
-### Despliegue en Vercel
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/tu-usuario/fullrex-landing)
+### Despliegue en Cloudflare Pages
 
-### Despliegue en Netlify
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/tu-usuario/fullrex-landing)
+Este proyecto está configurado para desplegarse en **Cloudflare Pages** con el adapter `@astrojs/cloudflare`.
+
+#### Pasos de despliegue:
+
+1. **Conectar repositorio a Cloudflare Pages**
+   - Inicia sesión en [Cloudflare Dashboard](https://dash.cloudflare.com)
+   - Ve a **Workers & Pages** > **Create application** > **Pages** > **Connect Git**
+
+2. **Configurar proyecto:**
+   - **Production branch**: `main`
+   - **Build command**: `pnpm build`
+   - **Build output directory**: `dist`
+
+3. **Variables de entorno:**
+   - Configura las siguientes variables en Cloudflare:
+     - `NODE_VERSION`: `18`
+
+#### Despliegue manual (CLI)
+```bash
+pnpm wrangler pages project create fullrex-landing
+pnpm wrangler pages deploy dist
+```
+
+#### Configuración de Cloudflare en el proyecto
+El adapter de Cloudflare está configurado en `astro.config.mjs`. Para personalizar opciones de Cloudflare, modifica la configuración del adapter.
 
 ##  Rendimiento
 
