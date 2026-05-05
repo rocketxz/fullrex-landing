@@ -32,7 +32,7 @@ const socialLinks = {
   facebook: 'https://www.facebook.com/fullrex',
   x: 'https://twitter.com/fullrex',
   instagram: 'https://instagram.com/fullrex',
-  whatsapp: 'https://wa.me/593961661643',
+  whatsapp: 'https://wa.me/593997827958',
   tiktok: 'https://www.tiktok.com/@full.rex.quitumbe',
 };
 

@@ -23,7 +23,7 @@ longDescription:
   subTitle: |
     El FR-ALARM Pro te alerta de inmediato ante cualquier intrusión o detección de humo, enviando notificaciones por llamada y SMS a hasta 5 contactos de emergencia. No depende de internet, por lo que funciona incluso si cortan el WiFi o la luz (batería de respaldo incluida).
   btnTitle: 'Solicitar instalación por WhatsApp'
-  btnURL: 'https://wa.me/593961661643?text=Hola%20FULLREX%2C%20me%20interesa%20el%20Kit%20Alarma%20FR-ALARM%20Pro.%20%C2%BFPueden%20darme%20m%C3%A1s%20informaci%C3%B3n%20e%20instalaci%C3%B3n%3F'
+  btnURL: 'https://wa.me/593997827958?text=Hola%20FULLREX%2C%20me%20interesa%20el%20Kit%20Alarma%20FR-ALARM%20Pro.%20%C2%BFPueden%20darme%20m%C3%A1s%20informaci%C3%B3n%20e%20instalaci%C3%B3n%3F'
 descriptionList:
   - title: 'Alerta Inmediata por GSM'
     subTitle: 'Envía llamadas y SMS automáticos a tus contactos de emergencia al detectar intrusión o humo, sin necesitar internet.'

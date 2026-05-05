@@ -4,7 +4,7 @@ export const SITE = {
   title: 'FULLREX',
   tagline: 'Extintores, Cámaras y Alarmas en Quito',
   description:
-    'Venta, recarga y mantenimiento de extintores certificados INEN 731. Cámaras Hikvision y alarmas en Quito. Cotización gratis ☎ 0961661643',
+    'Venta, recarga y mantenimiento de extintores certificados INEN 731. Cámaras Hikvision y alarmas en Quito. Cotización gratis ☎ +593 99 782 7958',
   description_short:
     'Extintores, cámaras de seguridad y alarmas en Quito — FULLREX.',
   url: 'https://fullrexquitumbe.com',
@@ -37,7 +37,7 @@ export const OG = {
   url: SITE.url,
   title: 'Extintores y Cámaras en Quito | FULLREX — Recarga INEN 731',
   description:
-    'Venta, recarga y mantenimiento de extintores certificados INEN 731. Cámaras Hikvision y alarmas en Quito. Cotización gratis ☎ 0961661643',
+    'Venta, recarga y mantenimiento de extintores certificados INEN 731. Cámaras Hikvision y alarmas en Quito. Cotización gratis ☎ +593 99 782 7958',
   image: ogImageSrc,
 };
 

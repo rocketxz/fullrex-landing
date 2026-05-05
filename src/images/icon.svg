@@ -5,5 +5,11 @@
       <stop offset="100%" stop-color="#6A1B9A"/>
     </linearGradient>
   </defs>
-  <path d="M28 4L12 26H22L18 44L36 20H26L28 4Z" fill="url(#bolt_grad)" stroke="#000000" stroke-width="1.5" stroke-linejoin="round"/>
+  <path
+    d="M28 4 H40 L30 18 H38 L20 44 L26 24 H18 Z"
+    fill="#ed1c24"
+    stroke="#1e2044"
+    stroke-width="1.5"
+    stroke-linejoin="round"
+  />
 </svg>

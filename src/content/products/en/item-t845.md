@@ -23,7 +23,7 @@ longDescription:
   subTitle: |
     La DS-2CD2143G2-I ofrece imágenes nítidas en 4 Megapíxeles y tecnología AcuSense para detección inteligente de movimiento, reduciendo las falsas alarmas y focalizando las alertas en lo que realmente importa: personas y vehículos.
   btnTitle: 'Solicitar cotización por WhatsApp'
-  btnURL: 'https://wa.me/593961661643?text=Hola%20FULLREX%2C%20me%20interesa%20la%20c%C3%A1mara%20Hikvision%20DS-2CD2143G2-I.%20%C2%BFPueden%20darme%20m%C3%A1s%20informaci%C3%B3n%3F'
+  btnURL: 'https://wa.me/593997827958?text=Hola%20FULLREX%2C%20me%20interesa%20la%20c%C3%A1mara%20Hikvision%20DS-2CD2143G2-I.%20%C2%BFPueden%20darme%20m%C3%A1s%20informaci%C3%B3n%3F'
 descriptionList:
   - title: 'Tecnología AcuSense'
     subTitle: 'Detecta y diferencia entre humanos y vehículos, eliminando falsas alarmas causadas por animales o lluvia.'

@@ -23,7 +23,7 @@ longDescription:
   subTitle: |
     El FR-10 está diseñado para empresas, locales comerciales y vehículos de transporte. Cumple estrictamente con la norma INEN 731 y las disposiciones del Cuerpo de Bomberos del Ecuador, garantizando tu tranquilidad y la seguridad de tu patrimonio ante cualquier emergencia.
   btnTitle: 'Solicitar recarga o cotización por WhatsApp'
-  btnURL: 'https://wa.me/593961661643?text=Hola%20FULLREX%2C%20me%20interesa%20el%20Extintor%20PQS%20FR-10%20de%2010%20lbs.%20%C2%BFPueden%20darme%20m%C3%A1s%20informaci%C3%B3n%3F'
+  btnURL: 'https://wa.me/593997827958?text=Hola%20FULLREX%2C%20me%20interesa%20el%20Extintor%20PQS%20FR-10%20de%2010%20lbs.%20%C2%BFPueden%20darme%20m%C3%A1s%20informaci%C3%B3n%3F'
 descriptionList:
   - title: 'Certificación INEN 731'
     subTitle: 'Cumple con la normativa ecuatoriana INEN 731 y es aceptado por el Cuerpo de Bomberos para auditorías técnicas.'
